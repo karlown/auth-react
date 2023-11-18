@@ -57,27 +57,26 @@ const Login = (props) => {
             <label className="form-item" type="email">
           почта
         </label>
-        <input
+         <input
           className="form-item"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
           placeholder="youremail@mail.ru"
           id="email"
-          name="email"
+          required={true}
         />
         <label className="form-item" type="password">
           пароль
         </label>
         <input
-         className="form-item"
-         value={pass}
-         onChange={(e) => setPass(e.target.value)}
-         type="password"
-         placeholder="********"
-         id="password"
-         name="password"
-         minLength={8}
+          className="form-item"
+          value={pass}
+          onChange={(e) => setPass(e.target.value)}
+          type="password"
+          placeholder="********"
+          id="password"
+          required={true}
         />
                 <button type="submit">Войти</button>
             </form>
